@@ -44,14 +44,14 @@
                 <section style="margin-top:2%" data-markdown>
                     <script type="text/template">
                         <span style="font-size:100px">Jenkins</span>
-
+                       
 
 
 
 
                         <small>
                             <a href="http://amx1390.com/">zhang.xx</a> /
-                            <a href="https://github.com/zhangxx0">@zhangxx0</a>
+                            <a href="http://www.zqgbzx.cn/">@ZQZX</a>
                         </small>
                     </script>
                 </section>
@@ -247,7 +247,7 @@
 
                 <section data-markdown>
                     <script type="text/template">
-                        ## 新建MAVEN项目
+                        ## 新建Jenkins MAVEN项目
 
                         <img src="attach/maven2.png"/>
                         <!-- .element: class="fragment" -->
@@ -258,7 +258,7 @@
 
                 <section data-markdown data-transition="zoom">
                     <script type="text/template">
-                        ## *为什么没有Maven项目选项？？？*
+                        ## *为什么没有MAVEN项目选项？？？*
                         <img src="attach/yaoming.jpg"/>
                     </script>
                 </section>
@@ -283,141 +283,138 @@
                         #### *https://192.168.1.175:9443/svn/alms-tzy-ydxx-api/jenkinsmaven Maven Webapp*
                         <!-- .element: class="fragment" -->
 
-                        #### **
+                        #### *添加jfinal的依赖*
                         <!-- .element: class="fragment" -->
 
                         ```
-                        jfinal pom
-                        ```
-                        <!-- .element: class="fragment" -->
-
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ## jenkins项目配置
-
-                        #### *https://192.168.1.175:9443/svn/alms-tzy-ydxx-api/jenkinsmaven Maven Webapp*
-                        <!-- .element: class="fragment" -->
-
-                        #### **
-                        <!-- .element: class="fragment" -->
-
-                        ```
-                        jfinal pom
+                        <dependency>
+                            <groupId>com.jfinal</groupId>
+                            <artifactId>jfinal</artifactId>
+                            <version>2.2</version>
+                        </dependency>
                         ```
                         <!-- .element: class="fragment" -->
 
                     </script>
                 </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ## 部署到远程的tomcat
-
-                        #### **
-                        <!-- .element: class="fragment" -->
-
-                        ```
-                        jfinal pom
-                        ```
-                        <!-- .element: class="fragment" -->
-
-                    </script>
-                </section>
-
-
-
-                <section data-markdown data-transition="convex">
-                    <script type="text/template">
-                        ## 没啥变化？
-
-                        <blockquote class="fragment"><p>*sample again!*</p></blockquote>
-                        <!-- .element: class="fragment" -->
-                    </script>
-                </section>
-
-
 
                 <section data-markdown data-transition="convex-in concave-out">
                     <script type="text/template">
-                        # *入了个门*
+                        # *jenkins项目配置*
                     </script>
                 </section>
-
-
-
-                <section data-markdown data-transition="convex">
-                    <script type="text/template">
-                        # *太复杂？*
-                    </script>
-                </section>
-
 
                 <section data-markdown>
                     <script type="text/template">
-                        - 修改 Observable 对象
-                        ```java
-                        Observable.just("Hello, world! -MrFu")
-                        ```
-                        <!-- .element: class="fragment" -->
-                        - Subscriber 中修改：
-                        <!-- .element: class="fragment" -->
-                        ```java
-                        .subscribe(s -> System.out.println(s + " -MrFu"));
-                        ```
+                        ## 项目概览
+
+                        <img src="attach/jenkinsmaven1.png"/>
                         <!-- .element: class="fragment" -->
 
-
-
-                        # *NO!!!!*
-                        <!-- .element: class="fragment" -->
                     </script>
                 </section>
 
-
-
-
-                <section data-markdown data-transition="zoom">
+                <section data-markdown>
                     <script type="text/template">
-                        <span style="font-size:100px">*See More!*</span>
+                        ## 源码管理
+
+                        <img src="attach/jenkinsmaven2.png"/>
+                        <!-- .element: class="fragment" -->
+
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## 构建触发器
+
+                        <img src="attach/jenkinsmaven3.png"/>
+                        <!-- .element: class="fragment" -->
+
+                    </script>
+                </section>
+                
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Build
+
+                        <img src="attach/jenkinsmaven4.png"/>
+                        <!-- .element: class="fragment" -->
+
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## 构建设置
+
+                        <img src="attach/jenkinsmaven5.png"/>
+                        <!-- .element: class="fragment" -->
+
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## 构建后操作
+
+                        <img src="attach/jenkinsmaven6.png"/>
+                        <!-- .element: class="fragment" -->
+
+                    </script>
+                </section>
+
+                
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## 部署到tomcat
+
+                        #### *插件：Deploy to container Plugin*
+                        <!-- .element: class="fragment" -->
+
+                        <img src="attach/tomcat1.png"/>
+                        <!-- .element: class="fragment" -->
 
                     </script>
                 </section>
 
 
-
-                <section data-markdown data-background="attach/bm_1.jpg"
+                <!-- <section data-markdown data-background="attach/bm_1.jpg"
                     style="background:rgba(0,0,0,0.8)">
                     <script type="text/template">
                         ## *Callback hell  !!!!!*
 
                         ## Solve it!
-                        <!-- .element: class="fragment" -->
+                        
 
                     </script>
-                </section>
-
-
+                </section> -->
 
                 <section data-markdown data-transition="convex">
                     <script type="text/template">
                         <span style="font-size:100px">*Anything else?*</span>
                     </script>
-                </section>
-
-
+                </section>                
 
                 <section data-markdown>
                     <script type="text/template">
-                        ## *RxBus*
-                        <blockquote class="fragment"><p>一种模式，使用 RxJava 实现 EventBus，从而不需要使用 Otto 或者 EventBus。[[1]](http://nerds.weddingpartyapp.com/tech/2014/12/24/implementing-an-event-bus-with-rxjava-rxbus/)</p></blockquote>
+                        ## 普通java web项目怎么办？
+
+                        #### *使用Ant，bulid.xml*
+                        <!-- .element: class="fragment" -->
+
+                        <img src="attach/javaweb.png"/>
                         <!-- .element: class="fragment" -->
 
                     </script>
                 </section>
 
+                <section data-markdown data-transition="convex">
+                    <script type="text/template">
+                        # *好像是说完了，，，*
+                    </script>
+                </section>
 
                 <section data-markdown>
                     <script type="text/template">
@@ -431,10 +428,10 @@
                 <section style="text-align: left;">
                     <h1>THE END</h1>
 
-                    <h5>MrFu</h5>
+                    <h5>zhangxx</h5>
                     <small>
-                        <a href="http://mrfu.me">Blog</a> /
-                        <a href="https://github.com/MrFuFuFu">GitHub</a>
+                        <a href="http://amx1390.com">Blog</a> /
+                        <a href="https://github.com/zhangxx0">GitHub</a>
                     </small>
                 </section>
             </div>
